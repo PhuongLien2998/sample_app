@@ -3,16 +3,18 @@ vi:
     application:
       title: "Ruby on Rails Tutorial Sample App"
       en: "tieng anh"
-      vi: "viet nam"  
+      vi: "viet nam"
   static_pages:
-    home: 
-      title: "Trang chu| Ruby on Rails Tutorial Sample App"
+    home:
+      home: trang chu
+      title: "Ruby on Rails Tutorial Sample App"
       h1: "mau ung dung"
       the: "day la trang chu cua"
       sample: ung dung mau.
       turhome: Ruby on Rails Tutorial
     help:
-      title: "tro giup | Ruby on Rails Tutorial Sample App"
+      help: tro giup
+      title: "Ruby on Rails Tutorial Sample App"
       h1: "ung dung mau"
       get: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
       turhelp: "Rails Tutorial help section"
