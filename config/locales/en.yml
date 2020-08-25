@@ -4,21 +4,52 @@ en:
       title: "Ruby on Rails Tutorial Sample App"
       en: "english"
       vi: "vietnames"
+    footer:
+      th: "the"
+      by: "by"
+      mich: "Michael Hartl"
+      turhome: "Ruby on Rails Tutorial"
+      news: "news"
+      about: "About"
+      contact: "Contact"
+    header:
+      log: "Log in"
+      sam: "sample_app"
+      home: "Home"
+      help: "help"
+      alt_name: "Rails logo"
   static_pages:
     home:
       home: "Home"
       title: "Home | Ruby on Rails Tutorial Sample App"
       h1: "Sample_app"
       the: "This is the home page for the"
-      turhome: Ruby on Rails Tutorial
-      sample: sample application.
+      turhome: "Ruby on Rails Tutorial"
+      sample: "sample application."
+      sign: "Sign up now!"
     help:
-      help: help
+      help: "help"
       title: "Help| Ruby on Rails Tutorial Sample App"
       h1: "Sample_app"
       get: "Get help on the Ruby on Rails Tutorial at the"
       turhelp: "Rails Tutorial help section"
       toget: "To get help on this sample app, see the"
-      turbook: Ruby on Rails Tutorial
+      turbook: "Ruby on Rails Tutorial"
       book: "book"
-  hello: "Hello world"
+    about:
+      A1: "About"
+      th: "the"
+      turhome: "Ruby on Rails Tutorial"
+      part: ", part of the"
+      Learn: "Learn Enough"
+      family: "family of tutorials, is a"
+      and: "and"
+      screen: "screencast series"
+      to: "to teach web development with"
+      turbook: "book"
+      this: "This is the sample app for the tutorial."
+      turrails: "Ruby on Rails"
+  users:
+    new:
+      sign: "Sign up"
+      this: "This will be a signup page for new users."
