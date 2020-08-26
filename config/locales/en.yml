@@ -1,2 +1,22 @@
 en:
+  layouts:
+    application:
+      title: "Ruby on Rails Tutorial Sample App"
+      en: "english"
+      vi: "vietnames"
+  static_pages:
+    home: 
+      title: "Home | Ruby on Rails Tutorial Sample App"
+      h1: "Sample_app"
+      the: "This is the home page for the"
+      turhome: Ruby on Rails Tutorial
+      sample: sample application.
+    help:
+      title: "Help| Ruby on Rails Tutorial Sample App"
+      h1: "Sample_app"
+      get: "Get help on the Ruby on Rails Tutorial at the"
+      turhelp: "Rails Tutorial help section"
+      toget: "To get help on this sample app, see the"
+      turbook: Ruby on Rails Tutorial
+      book: "book"
   hello: "Hello world"
