@@ -8,3 +8,11 @@ url:
   turrails: "https://rubyonrails.org/"
   new: "https://news.railstutorial.org/"
   lu: "luffy.jpg"
+user:
+  email:
+    length: 255
+    regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i'
+  name:
+    length: 50
+  password:
+    length: 6
