@@ -11,5 +11,6 @@ module SampleApp
     config.i18n.available_locales = [:en, :vi]
     config.i18n.default_locale = :vi
 
+    config.assets.paths << Rails.root.join("app", "assets", "img")
   end
 end

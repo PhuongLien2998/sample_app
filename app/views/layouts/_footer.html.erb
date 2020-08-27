@@ -1,0 +1,15 @@
+<footer class="footer">
+  <small>
+    <%= t ".th" %>
+    <%= link_to t(".turhome"), Settings.url.turhome %>
+    <%= t ".by" %>
+    <%= link_to t(".mich"), Settings.url.mich %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".about"), about_path %></li>
+      <li><%= link_to t(".contact"), contact_path %></li>
+      <li><%= link_to t(".news"), "#" %></li>
+    </ul>
+  </nav>
+</footer>

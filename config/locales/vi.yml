@@ -2,23 +2,54 @@ vi:
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
-      en: "tieng anh"
-      vi: "viet nam"
+      en: "Tiếng anh"
+      vi: "Tiếng việt"
+    footer:
+      th: ""
+      by: "bởi"
+      mich: "Michael Hartl"
+      turhome: "Ruby on Rails Tutorial"
+      news: "Tin tức"
+      about: "About"
+      contact: "Liên hệ"
+    header:
+      log: "Đăng nhập"
+      sam: "sample_app"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      alt: "Rails logo"
   static_pages:
     home:
-      home: trang chu
+      home: "Trang chủ"
       title: "Ruby on Rails Tutorial Sample App"
-      h1: "mau ung dung"
-      the: "day la trang chu cua"
-      sample: ung dung mau.
-      turhome: Ruby on Rails Tutorial
+      h1: "Ứng dụng mẫu"
+      the: "Đây là trang chủ của"
+      sample: "sample app"
+      turhome: "Ruby on Rails Tutorial"
+      sign: "Đăng kí ngay!"
     help:
-      help: tro giup
+      help: "Trợ giúp"
       title: "Ruby on Rails Tutorial Sample App"
-      h1: "ung dung mau"
+      h1: "Ứng dụng mẫu"
       get: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
-      turhelp: "Rails Tutorial help section"
-      toget: "Để nhận trợ giúp về ứng dụng mẫu này, hãy xem"
-      ruby: Ruby on Rails Tutorial
-      book: "sach"
-  hello: "Xin chào"
+      turhelp: "Rails Tutorial help section."
+      toget: "Để nhận trợ giúp về ứng dụng mẫu này, hãy xem cuốn sách"
+      ruby: "Ruby on Rails Tutorial"
+      book: ""
+    about:
+      A1: "About"
+      th: ""
+      turhome: "Ruby on Rails Tutorial"
+      part: ", một phần của bộ hướng dẫn "
+      Learn: "Learn Enough"
+      family: "là một loạt"
+      and: "và"
+      screen: "video dạy truyền hình"
+      to: "để đào tạo web phát triển với"
+      turbook: "sách"
+      this: "đây là một ví dụ đơn giản của the tutorial."
+      turrails: "Ruby on Rails"
+  users:
+    new:
+      sign: "Đăng kí"
+      this: "Đây sẽ là trang đăng ký cho người dùng mới. "
