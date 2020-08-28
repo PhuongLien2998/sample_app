@@ -17,7 +17,7 @@ vi:
       sam: "sample_app"
       home: "Trang chủ"
       help: "Trợ giúp"
-      alt: "Rails logo"
+      alt_name: "Rails logo"
   static_pages:
     home:
       home: "Trang chủ"
