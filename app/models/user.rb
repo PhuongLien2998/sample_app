@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  USERS_PARAMS = %i(name email password password_confirmation).freeze
   VALID_EMAIL_REGEX = Settings.user.email.regex
 
   validates :name, presence: true, length:

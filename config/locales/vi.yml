@@ -1,4 +1,9 @@
 vi:
+  global:
+    app_name: "Sample App"
+    welcome: "Chào mừng đến Sample App!"
+    unsuccessful: "Đăng kí không thành công!"
+    not_found: "Không tìm thấy người dùng!"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -52,4 +57,12 @@ vi:
   users:
     new:
       sign: "Đăng kí"
-      this: "Đây sẽ là trang đăng ký cho người dùng mới. "
+      con : "Xác Nhận"
+      create: "Tạo tài khoản của tôi"
+      pass: "Mật khẩu"
+      name: "Tên"
+      email: "Email"
+  share:
+    error_messages:
+      error: "Lỗi"
+      the: "Biểu mẫu chứa "

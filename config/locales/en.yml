@@ -1,4 +1,9 @@
 en:
+  global:
+    app_name: "Sample App"
+    welcome: "Welcome to the Sample App!"
+    unsuccessful: "Signup unsuccessful!"
+    not_found: "User not found!"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -52,4 +57,12 @@ en:
   users:
     new:
       sign: "Sign up"
-      this: "This will be a signup page for new users."
+      con : "Confirmation"
+      create: "Create my account"
+      pass: "Password"
+      name: "Name"
+      email: "Email"
+  share:
+    error_messages:
+      error: "error"
+      the: "The form contains "
