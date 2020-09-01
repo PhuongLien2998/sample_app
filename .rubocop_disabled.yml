@@ -81,3 +81,6 @@ Rails/InverseOf:
 Rails/ReflectionClassName:
   Description: "Use a string for `class_name` option value in the definition of a reflection."
   Enabled: false
+
+Rails/SkipsModelValidations:
+  Enabled: false
