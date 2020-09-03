@@ -18,7 +18,7 @@
       <%= link_to t(".en"), locale: :en %> |
       <%= link_to t(".vi"), locale: :vi %>
       <% flash.each do |message_type, message| %>
-      <div class="alert alert-<%= message_type %>"><%= message %></div>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
       <%= yield %>
       <%= render "layouts/footer" %>

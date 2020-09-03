@@ -1,9 +1,10 @@
 vi:
   global:
     app_name: "Sample App"
-    welcome: "Chào mừng đến Sample App!"
+    welcome: "Chào mừng %{variable} đến Sample App!"
     unsuccessful: "Đăng kí không thành công!"
     not_found: "Không tìm thấy người dùng!"
+    error_login: "Mật khẩu/ Email không hợp lệ"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -23,6 +24,11 @@ vi:
       home: "Trang chủ"
       help: "Trợ giúp"
       alt_name: "Rails logo"
+      users: "Người dùng"
+      account: "Tài khoản"
+      profile: "Hồ Sơ"
+      settings: "Cài đặt"
+      logout: "Đăng xuất"
   static_pages:
     home:
       home: "Trang chủ"
@@ -66,3 +72,10 @@ vi:
     error_messages:
       error: "Lỗi"
       the: "Biểu mẫu chứa "
+  sessions:
+    new:
+      login: "Đăng nhập"
+      email: "Email"
+      pass: "Mật khẩu"
+      new_user: "Bạn chưa có tài khoản?"
+      sign_up: "Đăng kí ngay!"

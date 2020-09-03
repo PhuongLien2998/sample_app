@@ -1,9 +1,11 @@
 en:
   global:
     app_name: "Sample App"
-    welcome: "Welcome to the Sample App!"
+    welcome: "Welcome %{variable} to the Sample App!"
     unsuccessful: "Signup unsuccessful!"
     not_found: "User not found!"
+    error_login: "Invalid email/password combination"
+    login_success: ""
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -23,6 +25,11 @@ en:
       home: "Home"
       help: "help"
       alt_name: "Rails logo"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Log out"
   static_pages:
     home:
       home: "Home"
@@ -66,3 +73,10 @@ en:
     error_messages:
       error: "error"
       the: "The form contains "
+  sessions:
+    new:
+      login: "Log in"
+      email: "Email"
+      pass: "Password"
+      new_user: "New user?"
+      sign_up: "Sign up now!"
