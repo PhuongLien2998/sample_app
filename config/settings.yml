@@ -8,6 +8,7 @@ url:
   turrails: "https://rubyonrails.org/"
   new: "https://news.railstutorial.org/"
   lu: "luffy.jpg"
+  change: "https://gravatar.com/emails"
 user:
   email:
     length: 255
@@ -16,3 +17,9 @@ user:
     length: 50
   password:
     length: 6
+  index:
+gravatar:
+  size: 80
+  size_index: 50
+paging:
+  size: 10

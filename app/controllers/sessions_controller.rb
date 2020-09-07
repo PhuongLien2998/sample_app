@@ -6,8 +6,8 @@ class SessionsController < ApplicationController
     if @user&.authenticate params[:session][:password]
       log_in @user
       check_remember
-      flash[:success] = t "global.welcome", variable: @user.name
-      redirect_to @user
+      flash[:success] = t "global.welcome", user_name: @user.name
+      redirect_back_or @user
     else
       flash.now[:danger] = t "global.error_login"
       render :new
