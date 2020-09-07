@@ -41,3 +41,6 @@ config/environments/*.local.yml
 /config/credentials.yml.enc
 /config/database.yml
 /test
+
+# Ignore application configuration
+/config/application.yml

@@ -1,7 +1,7 @@
 vi:
   global:
     app_name: "Sample App"
-    welcome: "Chào mừng %{user_name} đến Sample App!"
+    check_mail: "Hãy kiểm tra mail của bạn để kích hoạt tài khoản"
     unsuccessful: "Đăng kí không thành công!"
     not_found: "Không tìm thấy người dùng!"
     error_login: "Mật khẩu/ Email không hợp lệ"
@@ -10,6 +10,10 @@ vi:
     require_login: "Cần đăng nhập"
     delete_user: " Xóa thành công %{user_name}"
     destroy_fail: "Xóa không thành công %{user_name}"
+    not_activated: "Tài khoản chưa được kích hoạt "
+    account_activated: "Đã kích hoạt tài khoản"
+    invalid: "Liên kết kích hoạt không hợp lệ"
+    unactivated: "không kích hoạt được tài khoản."
   views:
     pagination:
         first: "« Lên đầu"
@@ -103,3 +107,12 @@ vi:
       new_user: "Bạn chưa có tài khoản?"
       sign_up: "Đăng kí ngay!"
       remember_me: "lưu đăng nhập trên máy tính này!"
+  user_mailer:
+    account_activation:
+      h1: "Sample App"
+      hi: "Xin chào"
+      welcome: "Chào mừng đến Sample App! Click vào link để kích hoạt tài khoản của bạn:"
+      activate: " Kích hoạt"
+  mailers:
+    user_mailer:
+      activated: "Kích hoạt tài khoản"

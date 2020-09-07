@@ -1,14 +1,19 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, except: %i(show new create)
-  before_action :load_user, only: %i(show edit destroy)
+  before_action :load_user, except: %i(index create new)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.page(params[:page]).per Settings.paging.size
+    @users = User.activated.page(params[:page]).per Settings.paging.size
   end
 
-  def show; end
+  def show
+    return if @user.activated?
+
+    flash[:danger] = t "global.unactivated"
+    redirect_to root_url
+  end
 
   def new
     @user = User.new
@@ -17,9 +22,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "global.welcome", user_name: @user.name
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "global.check_mail"
+      redirect_to root_url
     else
       flash.now[:danger] = t "global.unsuccessful"
       render :new
@@ -70,10 +75,16 @@ class UsersController < ApplicationController
   end
 
   def correct_user
-    redirect_to root_url unless current_user? @user
+    return if current_user? @user
+
+    flash[:danger] = t "global.not_found"
+    redirect_to root_url
   end
 
   def admin_user
-    redirect_to root_url unless current_user.admin?
+    return if current_user.admin?
+
+    flash[:danger] = t "global.not_found"
+    redirect_to root_url
   end
 end
