@@ -1,10 +1,22 @@
 vi:
   global:
     app_name: "Sample App"
-    welcome: "Chào mừng %{variable} đến Sample App!"
+    welcome: "Chào mừng %{user_name} đến Sample App!"
     unsuccessful: "Đăng kí không thành công!"
     not_found: "Không tìm thấy người dùng!"
     error_login: "Mật khẩu/ Email không hợp lệ"
+    update_success: "Cập nhật thành công!"
+    update_faild: "Cập nhật không thành công!"
+    require_login: "Cần đăng nhập"
+    delete_user: " Xóa thành công %{user_name}"
+    destroy_fail: "Xóa không thành công %{user_name}"
+  views:
+    pagination:
+        first: "« Lên đầu"
+        last: "Xuống cuối »"
+        previous: "‹ Trước"
+        next: "Sau ›"
+        truncate: "…"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -63,11 +75,22 @@ vi:
   users:
     new:
       sign: "Đăng kí"
-      con : "Xác Nhận"
       create: "Tạo tài khoản của tôi"
-      pass: "Mật khẩu"
+    edit:
+      edit_user: "Chỉnh sửa người dùng"
+      update: "Cập nhật hồ sơ người dùng"
+      save_change: "Lưu thay đổi"
+      change: "Thay đổi"
+    form:
       name: "Tên"
       email: "Email"
+      pass: "Mật khẩu"
+      con : "Xác Nhận"
+    index:
+      users: "Toàn bộ người dùng"
+    user:
+      delete: "Xóa"
+      con_delete: "Bạn có chắc muốn xóa %{user_name} không?"
   share:
     error_messages:
       error: "Lỗi"

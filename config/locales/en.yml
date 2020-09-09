@@ -1,11 +1,23 @@
 en:
   global:
     app_name: "Sample App"
-    welcome: "Welcome %{variable} to the Sample App!"
+    welcome: "Welcome %{user_name} to the Sample App!"
     unsuccessful: "Signup unsuccessful!"
     not_found: "User not found!"
     error_login: "Invalid email/password combination"
-    login_success: ""
+    update_success: "Profile updated"
+    update_faild: "Update faild"
+    require_login: "Please log in."
+    delete_user: "Deleted %{user_name}"
+    destroy_fail: "destroy %{user_name} faild "
+
+  views:
+    pagination:
+        first: "« FIRST"
+        last: "LAST »"
+        previous: "‹ PREV"
+        next: "NEXT ›"
+        truncate: "…"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -64,11 +76,22 @@ en:
   users:
     new:
       sign: "Sign up"
-      con : "Confirmation"
       create: "Create my account"
-      pass: "Password"
+    edit:
+      edit_user: "Edit user"
+      update: "Update your profile"
+      save_change: "Save change"
+      change: "change"
+    form:
       name: "Name"
       email: "Email"
+      pass: "Password"
+      con : "Confirmation"
+    index:
+      users: "All users"
+    user:
+      delete: "delete"
+      con_delete: "You sure delete %{user_name}?"
   share:
     error_messages:
       error: "error"
