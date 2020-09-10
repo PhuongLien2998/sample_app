@@ -1,7 +1,7 @@
 en:
   global:
     app_name: "Sample App"
-    welcome: "Welcome %{user_name} to the Sample App!"
+    check_mail: "Please check your email to activate your account."
     unsuccessful: "Signup unsuccessful!"
     not_found: "User not found!"
     error_login: "Invalid email/password combination"
@@ -10,7 +10,10 @@ en:
     require_login: "Please log in."
     delete_user: "Deleted %{user_name}"
     destroy_fail: "destroy %{user_name} faild "
-
+    not_activated: "Account not activated. "
+    account_activated: "Account activated!"
+    invalid: "Invalid activation link"
+    unactivated: "Account unactivated."
   views:
     pagination:
         first: "« FIRST"
@@ -104,3 +107,12 @@ en:
       new_user: "New user?"
       sign_up: "Sign up now!"
       remember_me: "Remember me on this computer"
+  user_mailer:
+    account_activation:
+      h1: "Sample App"
+      hi: "Hi"
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+  mailers:
+    user_mailer:
+      activated: "Account activation"
