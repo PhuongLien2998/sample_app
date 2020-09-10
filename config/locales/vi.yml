@@ -14,6 +14,13 @@ vi:
     account_activated: "Đã kích hoạt tài khoản"
     invalid: "Liên kết kích hoạt không hợp lệ"
     unactivated: "không kích hoạt được tài khoản."
+    sent_mail: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+    sent_mail_faild: "Không tìm thấy địa chỉ email"
+    error_pass: "can't be empty"
+    reset_pass_faild: "Cập nhật mật khẩu không thành công"
+    reset_pass_done: "Mật khẩu đã được đặt lại."
+    link_reset_expired: "link đặt lại mật khẩu đã hết hạn."
+    invalid_user: "Người dùng không hợp lệ"
   views:
     pagination:
         first: "« Lên đầu"
@@ -107,12 +114,31 @@ vi:
       new_user: "Bạn chưa có tài khoản?"
       sign_up: "Đăng kí ngay!"
       remember_me: "lưu đăng nhập trên máy tính này!"
+      forgot_pass: "(quên mật khẩu)"
   user_mailer:
     account_activation:
       h1: "Sample App"
       hi: "Xin chào"
       welcome: "Chào mừng đến Sample App! Click vào link để kích hoạt tài khoản của bạn:"
       activate: " Kích hoạt"
+    password_reset:
+      password_reset: "Đặt lại mật khẩu"
+      click_link_reset: "Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết bên dưới"
+      reset_pass: "Đặt lại mật khẩu"
+      ignore_email: "Nếu bạn không yêu cầu đặt lại mật khẩu của mình,
+      vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
+      link_expired: "link này sẽ hết hạn trong 2 tiếng."
   mailers:
     user_mailer:
       activated: "Kích hoạt tài khoản"
+      reset_pass: "Đặt lại mật khẩu"
+  password_resets:
+    new:
+      forgot_pass: "Quên mật khẩu"
+      email: "Email"
+      sub: "Gửi"
+    edit:
+      reset_pass: "Đặt lại mật khẩu "
+      pass: "Mật khẩu"
+      con: "Xác nhận"
+      update_pass: "Cập nhật"
