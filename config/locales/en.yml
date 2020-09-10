@@ -25,6 +25,11 @@ en:
     micropost_deleted: "Micropost deleted"
     create_failed: "Create failed"
     delete_failed: "Delete failed"
+    following: "Following"
+    followers: "Followers"
+    follow_faild: "follow faild"
+    unfollow_faild: "Unfollow faild"
+    relationships_fail: " not relationships"
   views:
     pagination:
         first: "« FIRST"
@@ -109,6 +114,13 @@ en:
       con_delete: "You sure delete %{user_name}?"
     show:
       microposts: "Microposts"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      view_profile: "view my profile"
+      microposts: "Microposts"
   shared:
     error_messages:
       error: "error"
@@ -119,6 +131,9 @@ en:
     user_info:
       view_profile: "view my profile"
       micropost: "micropost"
+    stats:
+      following: "following"
+      followers: "follower"
   sessions:
     new:
       login: "Log in"
