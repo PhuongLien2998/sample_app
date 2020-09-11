@@ -5,14 +5,18 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.activated.page(params[:page]).per Settings.paging.size
+    @users = User.activated.order_desc
+                 .page(params[:page]).per Settings.paging.size
   end
 
   def show
-    return if @user.activated?
-
-    flash[:danger] = t "global.unactivated"
-    redirect_to root_url
+    if @user.activated?
+      @microposts = @user.microposts.order_desc.page(params[:page])
+                         .per Settings.paging.size
+    else
+      flash[:danger] = t "global.unactivated"
+      redirect_to root_url
+    end
   end
 
   def new
@@ -56,14 +60,6 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit User::USERS_PARAMS
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "global.require_login"
-    redirect_to login_url
   end
 
   def load_user

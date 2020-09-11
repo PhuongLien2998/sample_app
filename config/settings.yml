@@ -17,9 +17,19 @@ user:
     length: 50
   password:
     length: 6
-  index:
+  expired:
+    time: 2
 gravatar:
   size: 80
   size_index: 50
 paging:
   size: 10
+image:
+  accept_types: "image/jpeg,image/gif,image/png"
+  height: 500
+  size: 5
+  types: ["image/jpeg", "image/gif", "image/png"]
+  width: 500
+micropost:
+  content:
+    length: 140

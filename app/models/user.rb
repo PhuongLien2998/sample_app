@@ -1,7 +1,9 @@
 class User < ApplicationRecord
   USERS_PARAMS = %i(name email password password_confirmation).freeze
   VALID_EMAIL_REGEX = Settings.user.email.regex
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
+
+  has_many :microposts, dependent: :destroy
 
   validates :name, presence: true, length: {maximum: Settings.user.name.length}
   validates :email, presence: true,
@@ -14,6 +16,7 @@ class User < ApplicationRecord
   has_secure_password
 
   scope :activated, ->{where activated: true}
+  scope :order_desc, ->{order created_at: :desc}
 
   before_save :downcase_email
   before_create :create_activation_digest
@@ -55,6 +58,23 @@ class User < ApplicationRecord
 
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
+  end
+
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
+  def password_reset_expired?
+    reset_sent_at < Settings.user.expired.time.hours.ago
+  end
+
+  def feed
+    microposts
   end
 
   private
