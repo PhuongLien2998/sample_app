@@ -17,7 +17,8 @@ user:
     length: 50
   password:
     length: 6
-  index:
+  expired:
+    time: 2
 gravatar:
   size: 80
   size_index: 50

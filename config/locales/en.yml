@@ -14,6 +14,13 @@ en:
     account_activated: "Account activated!"
     invalid: "Invalid activation link"
     unactivated: "Account unactivated."
+    sent_mail: "Email sent with password reset instructions"
+    sent_mail_faild: "Email address not found"
+    error_pass: "can't be empty"
+    reset_pass_faild: "Password reset failed."
+    reset_pass_done: "Password has been reset."
+    link_reset_expired: "Password reset has expired."
+    invalid_user: "Invalid user"
   views:
     pagination:
         first: "« FIRST"
@@ -107,12 +114,32 @@ en:
       new_user: "New user?"
       sign_up: "Sign up now!"
       remember_me: "Remember me on this computer"
+      forgot_pass: "(forgot password)"
   user_mailer:
     account_activation:
       h1: "Sample App"
       hi: "Hi"
-      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      welcome: "Welcome to the Sample App! Click on the link below to activate
+      your account:"
       activate: "Activate"
+    password_reset:
+      password_reset: "Password reset"
+      click_link_reset: "To reset your password click the link below"
+      reset_pass: "Reset password"
+      ignore_email: "If you did not request your password to be reset,
+      please ignore this email and your password will stay as it is."
+      link_expired: "This link will expire in two hours."
   mailers:
     user_mailer:
       activated: "Account activation"
+      reset_pass: "Password reset"
+  password_resets:
+    new:
+      forgot_pass: "Forgot password"
+      email: "Email"
+      sub: "Submit"
+    edit:
+      reset_pass: "Reset password"
+      pass: "Password"
+      con: "Confirmation"
+      update_pass: "Update password"
