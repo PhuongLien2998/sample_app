@@ -12,5 +12,7 @@ module SampleApp
     config.i18n.default_locale = :vi
 
     config.assets.paths << Rails.root.join("app", "assets", "img")
+
+    config.middleware.use I18n::JS::Middleware
   end
 end

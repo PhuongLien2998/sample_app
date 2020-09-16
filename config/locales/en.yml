@@ -21,6 +21,10 @@ en:
     reset_pass_done: "Password has been reset."
     link_reset_expired: "Password reset has expired."
     invalid_user: "Invalid user"
+    micropost_created: "Micropost created!"
+    micropost_deleted: "Micropost deleted"
+    create_failed: "Create failed"
+    delete_failed: "Delete failed"
   views:
     pagination:
         first: "« FIRST"
@@ -61,6 +65,7 @@ en:
       turhome: "Ruby on Rails Tutorial"
       sample: "sample application."
       sign: "Sign up now!"
+      feed: "Micropost Feed"
     help:
       help: "help"
       title: "Help| Ruby on Rails Tutorial Sample App"
@@ -102,10 +107,18 @@ en:
     user:
       delete: "delete"
       con_delete: "You sure delete %{user_name}?"
-  share:
+    show:
+      microposts: "Microposts"
+  shared:
     error_messages:
       error: "error"
       the: "The form contains "
+    micropost_form:
+      compose: "Compose new micropost..."
+      post: "Post"
+    user_info:
+      view_profile: "view my profile"
+      micropost: "micropost"
   sessions:
     new:
       login: "Log in"
@@ -143,3 +156,16 @@ en:
       pass: "Password"
       con: "Confirmation"
       update_pass: "Update password"
+  microposts:
+    micropost:
+      con: "You sure?"
+      post: "Posted"
+      ago: "ago"
+      delete: "delete"
+  models:
+    micropost:
+      mustva: "must be a valid image format"
+      suggest_size: "should be less than 5MB"
+  javascript:
+    micropost:
+      warning_imge: "Maximum file size is 5MB. Please choose a smaller file."

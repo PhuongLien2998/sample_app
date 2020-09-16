@@ -3,6 +3,8 @@ class User < ApplicationRecord
   VALID_EMAIL_REGEX = Settings.user.email.regex
   attr_accessor :remember_token, :activation_token, :reset_token
 
+  has_many :microposts, dependent: :destroy
+
   validates :name, presence: true, length: {maximum: Settings.user.name.length}
   validates :email, presence: true,
                     length: {maximum: Settings.user.email.length},
@@ -14,6 +16,7 @@ class User < ApplicationRecord
   has_secure_password
 
   scope :activated, ->{where activated: true}
+  scope :order_desc, ->{order created_at: :desc}
 
   before_save :downcase_email
   before_create :create_activation_digest
@@ -68,6 +71,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.user.expired.time.hours.ago
+  end
+
+  def feed
+    microposts
   end
 
   private
